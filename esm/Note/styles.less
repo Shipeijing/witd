@@ -1,0 +1,45 @@
+.super-note-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+.super-note {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  transition: height 0.3s;
+}
+.super-note-main {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 35px;
+  // margin-right: 35px;
+}
+.super-note-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.super-note-content span {
+  white-space: nowrap;
+}
+.super-note-main h4 {
+  margin: auto 10px;
+  color: inherit;
+  white-space: nowrap;
+}
+.super-note-active {
+  margin-left: 10px;
+  color: #1677ff;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../theme.less'; // 导入主题
+
+.super-progress-bar {
+  width: 100%;
+  color: @primary-color;
+  > div {
+    width: 0;
+    height: 1px;
+    background-color: @primary-color;
+    box-shadow: 0 0 5px @primary-color;
+    transition: width 0.5s;
+  }
+}
+.super-progress-bar-loading {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.super-progress-bar-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}

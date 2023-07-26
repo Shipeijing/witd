@@ -1,0 +1,63 @@
+.super-select-address {
+  padding: 10px;
+}
+
+.super-select-address>div {
+  margin-bottom: 10px;
+}
+
+.super-select-address-content {
+  position: relative;
+}
+
+.super-select-address-content>.ant-btn {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+}
+
+.super-select-address-item {
+  /* display: flex; */
+  border-top: 1px solid #eee;
+  margin-bottom: 10px;
+  padding-top: 8px;
+}
+
+.super-select-address-item h3 {
+  display: block;
+  margin-bottom: 6px;
+  padding-top: 5px;
+  font-size: 14px;
+  color: rgb(74, 74, 74);
+}
+
+.super-select-address-item span {
+  margin-right: 16px;
+  line-height: 26px;
+  cursor: pointer;
+  color: rgb(124, 124, 124);
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.super-select-address-item span:hover {
+  color: rgb(42, 42, 42);
+}
+
+.super-select-address-data {
+  /* position: absolute;
+  height: 50px; */
+}
+
+.super-select-address-data h3 {
+  display: inline;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: rgb(74, 74, 74);
+}
+
+.super-select-address-data span {
+  line-height: 26px;
+  color: rgb(42, 42, 42);
+
+}

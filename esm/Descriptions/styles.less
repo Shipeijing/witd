@@ -1,0 +1,65 @@
+@import '../theme.less'; // 导入主题
+
+/** @format */
+
+#super-descriptions-form {
+  .ant-form-item {
+    margin: 0 !important;
+  }
+  .ant-descriptions-item-label {
+    line-height: 32px;
+  }
+  .ant-descriptions-item-content {
+    line-height: 32px;
+  }
+  .ant-descriptions-bordered .ant-descriptions-row th {
+    padding: 10px 20px !important;
+    background-color: rgba(0, 0, 0, 0.02) !important;
+  }
+  .ant-descriptions-bordered .ant-descriptions-row td {
+    padding: 10px 20px;
+    background-color: #ffffff;
+  }
+  .super-descriptions-form-required::before {
+    display: inline-block;
+    color: @error-color;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+    margin-inline-end: 4px;
+  }
+  .super-descriptions-form-required {
+    margin-left: -10px;
+  }
+}
+.super-descriptions-form-item-edit {
+}
+
+#super-descriptions-form .ant-descriptions.ant-descriptions-bordered .super-descriptions-item-edit {
+  padding: 10px 5px 10px 9px;
+  .ant-form-item-control-input-content {
+    > div,
+    input,
+    textarea,
+    .ant-select-selector {
+      border: none !important;
+    }
+  }
+}
+.super-descriptions-main {
+  .ant-descriptions-view {
+    overflow: hidden;
+  }
+}
+#super-descriptions-form
+  .ant-descriptions.ant-descriptions-bordered
+  .super-descriptions-item-edit-readonly {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.ant-descriptions-bordered .ant-descriptions-view {
+  background-color: #ffffff;
+}
+.super-descriptions-item-edit-readonly {
+  border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+}

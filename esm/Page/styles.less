@@ -1,0 +1,28 @@
+.super-page {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  .super-page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .super-page-body {
+    margin-top: 20px;
+  }
+  .super-page-body-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 50px);
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  .ant-spin-nested-loading,
+  .ant-spin-container {
+    height: calc(100% - 20px);
+  }
+}

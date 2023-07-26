@@ -1,0 +1,55 @@
+@import '../../theme.less'; // 导入主题
+.super-confirm-main {
+  position: relative;
+  box-sizing: border-box;
+  margin: 20% auto;
+  padding: 25px 20px 20px 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(156, 156, 156);
+  pointer-events: auto;
+}
+.super-confirm-main-footer {
+  text-align: right;
+}
+.super-confirm-main-header {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
+  h3 {
+    margin-top: 0px;
+    margin-right: 50px;
+    margin-bottom: 0 !important;
+    margin-left: 10px;
+    padding-top: 0.3px;
+  }
+  svg {
+    margin-right: 5px;
+    color: @primary-color;
+    font-size: 26px;
+  }
+  .anticon {
+    align-items: flex-start;
+  }
+}
+.super-confirm-icon-success svg {
+  color: @success-color;
+}
+.super-confirm-icon-error svg {
+  color: @error-color;
+}
+.super-confirm-icon-warning svg {
+  color: @warning-color;
+}
+.super-confirm-main-body {
+  padding: 12px 20px 35px 10px;
+}
+.super-confirm-tips {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  svg {
+    color: rgb(137, 137, 137);
+    font-size: 16px;
+  }
+}

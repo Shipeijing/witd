@@ -1,0 +1,92 @@
+@import '../theme.less'; // 导入主题
+
+.super-navigation {
+  position: fixed;
+  top: 10vh;
+  left: 25vw;
+  z-index: 521;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  width: 50vw;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 0 30px rgb(183, 183, 183);
+  .super-navigation-header {
+    width: 100%;
+  }
+}
+.super-navigation-search {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 20px;
+}
+.super-navigation-body {
+  width: calc(100% - 0px);
+  // min-height: 100px;
+  max-height: calc(80vh - 80px);
+  overflow-y: auto;
+  border-top: 1px solid #e5e5e5;
+}
+.super-navigation-route-list {
+  margin-bottom: 10px;
+  .super-navigation-route-list-nav {
+    margin: 10px 20px 10px 0px;
+    color: #9c9c9c;
+    font-weight: 500;
+    font-size: 13px;
+    span {
+      padding-right: 8px;
+    }
+  }
+}
+.super-navigation-route-list-children {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.super-navigation-route-list-action {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 4px 10px 4px 0px;
+  color: #474747;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  span {
+    padding-right: 8px;
+  }
+  &:hover {
+    color: @primary-color;
+  }
+}
+.super-navigation-route-select-item {
+  padding: 10px 10px;
+  color: #474747;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+  &:first-of-type {
+    border-top: 1px solid #e5e5e5;
+  }
+}
+.super-navigation-route-select {
+  color: #ffffff;
+  background-color: @primary-color;
+}
+.super-navigation-route-select-icon {
+  display: inline-block;
+  width: 34px;
+  margin-right: 10px;
+  text-align: center;
+}
+.super-navigation-mask {
+  position: fixed;
+  top: 0;
+  z-index: 520;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.05);
+}

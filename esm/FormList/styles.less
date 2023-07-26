@@ -1,0 +1,59 @@
+@import '../theme.less'; // 导入主题
+
+.super-form {
+  .ant-form-item-control {
+    max-width: none;
+  }
+}
+.super-form-label-middle {
+  .ant-form-item-label {
+    flex: 0 0 110px;
+    max-width: 110px;
+  }
+}
+.super-form-label-small {
+  .ant-form-item-label {
+    flex: 0 0 80px;
+    max-width: 80px;
+  }
+}
+.super-form-label-large {
+  .ant-form-item-label {
+    flex: 0 0 140px;
+    max-width: 140px;
+  }
+}
+.super-formlist-drag-handle {
+  padding-left: 4px;
+  // padding: 3px 5px;
+  // background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+  svg {
+    color: rgb(126, 126, 126);
+    font-size: 18px;
+  }
+  &:hover {
+    svg {
+      color: @primary-color;
+    }
+  }
+}
+.super-form-list-row-dragging {
+  cursor: pointer !important;
+  .super-formlist-drag-handle {
+    svg {
+      color: @primary-color;
+    }
+  }
+}
+
+.super-form-list-required::before {
+  display: inline-block;
+  color: @error-color;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+  margin-inline-end: 4px;
+}
